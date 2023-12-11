@@ -178,18 +178,6 @@ files <- list.files(path = "/Users/emilygemmell/miniconda3/minicoco/data/all_ima
     library(hrbrthemes)
     library(viridis)
     
-    #The following assumptions must be met in order to run a Mann-Whitney U test:
-    
-    # 1. Treatment groups are independent of one another. Experimental units only receive one treatment and they do not overlap.
-    # 2. The response variable of interest is ordinal or continuous.
-    # 3. Both samples are random.
-    
-    #Perform the Shapiro-Wilk Test for Normality on each group
-    #cars %>%
-    #  group_by(group) %>%
-    #  summarise(`W Statistic` = shapiro.test(car)$statistic,
-    #            `p-value` = shapiro.test(car)$p.value)
-    
     hist(pred_pairs$winner_count)
     hist(pred_pairs$loser_count)
     
